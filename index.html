@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Leonardo Canorio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Leonardo</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto" class="btn-nav">Contáctame</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-texto">
+      <h2>¡Hola! Soy <span class="resaltado">Leonardo Canorio</span></h2>
+      <p>Desarrollador web junior apasionado por crear sitios accesibles y responsivos.</p>
+      <a href="#contacto" class="btn-principal">Contáctame</a>
+    </div>
+    <div class="hero-foto">
+      <img src="img/perfil.jpg" alt="Foto de Leonardo" />
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="sobre">
+    <h2>Sobre mí</h2>
+    <div class="sobre-contenido">
+      <p>Soy <strong>Leonardo</strong>, estudiante universitario y desarrollador de software con sólida formación en ingeniería de sistemas e informática. Tengo experiencia en desarrollo web, aplicaciones móviles y videojuegos, y disfruto enseñar a jóvenes cómo aplicar la tecnología para resolver problemas reales.</p>
+      <p>Actualmente brindo asesoría en tesis, proyectos educativos, y desarrollo de sistemas para pequeñas empresas. Me apasiona crear soluciones funcionales con HTML, CSS, JavaScript, y frameworks modernos.</p>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos">
+    <h2>Proyectos recientes</h2>
+    <div class="grid-proyectos">
+      <div class="card">
+        <img src="img/proyecto1.png" alt="Landing Panadería">
+        <h3>Landing Page de Panadería</h3>
+        <p>Diseño simple con enfoque visual para una panadería local.</p>
+        <div class="links">
+          <a href="#">Demo</a>
+          <a href="#">Código</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/proyecto2.png" alt="Calculadora JS">
+        <h3>Calculadora con JavaScript</h3>
+        <p>Calculadora funcional construida con JavaScript puro.</p>
+        <div class="links">
+          <a href="#">Demo</a>
+          <a href="#">Código</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul class="lista-habilidades">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="formulario-contacto">
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" id="correo" name="correo" placeholder="Tu correo" required />
+      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Leonardo Canorio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
