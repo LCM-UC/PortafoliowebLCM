@@ -1,4 +1,12 @@
+/* Fuente */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+  --em: #00ffb3;
+  --em-dark: #00d194;
+  --bg: #0f0f0f;
+  --text-light: #ccc;
+}
 
 * {
   margin: 0;
@@ -8,230 +16,175 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #0f0f0f;
+  background: var(--bg);
   color: #fff;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
 
-/* Header */
-header {
-  background: #111;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 1rem 3rem;
+/* ================= NAV ================= */
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(15, 15, 15, 0.9) !important;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav .logo {
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: #00ffb3;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
+.navbar .nav-link {
   transition: 0.3s;
 }
 
-nav a:hover {
-  color: #00ffb3;
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--em) !important;
 }
 
-.btn-nav {
-  padding: 0.5rem 1rem;
-  border: 1px solid #00ffb3;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.btn-nav:hover {
-  background: #00ffb3;
-  color: #111;
-}
-
-/* Hero */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4rem 3rem;
-  min-height: 80vh;
-}
-
-.hero-texto {
-  max-width: 50%;
-}
-
-.hero-texto h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero-texto .resaltado {
-  color: #00ffb3;
-}
-
-.hero-texto p {
-  margin-bottom: 2rem;
-  color: #ccc;
-}
-
-.btn-principal {
-  background: #00ffb3;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
+.btn-em {
+  background: var(--em);
+  border: none;
   color: #111;
   font-weight: 600;
-  text-decoration: none;
   transition: 0.3s;
 }
 
-.btn-principal:hover {
-  background: #00d194;
+.btn-em:hover {
+  background: var(--em-dark);
+  color: #111;
 }
 
-.hero-foto img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #00ffb3;
+.text-em {
+  color: var(--em) !important;
 }
 
-/* Secciones */
-section {
-  padding: 4rem 3rem;
+.border-em {
+  border-color: var(--em) !important;
+}
+
+.border-em-subtle {
+  border-color: rgba(0, 255, 179, 0.3) !important;
+}
+
+/* ================= SECCIONES ================= */
+.section-pad {
+  padding: 5rem 1rem;
 }
 
 h2 {
-  margin-bottom: 1.5rem;
   font-size: 2rem;
-}
-
-/* Sobre mí */
-.sobre-contenido {
-  max-width: 800px;
-  color: #bbb;
-}
-
-/* Proyectos */
-.grid-proyectos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.card {
-  background: #1a1a1a;
-  padding: 1rem;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.card p {
-  color: #aaa;
-  font-size: 0.9rem;
-}
-
-.card .links a {
-  margin-right: 1rem;
-  color: #00ffb3;
-  text-decoration: none;
-}
-
-.card .links a:hover {
-  text-decoration: underline;
-}
-
-/* Habilidades */
-.lista-habilidades {
-  list-style: none;
-  display: grid;
-  gap: 0.8rem;
-}
-
-.lista-habilidades li {
-  position: relative;
-  padding-left: 1.5rem;
-  color: #bbb;
-}
-
-.lista-habilidades li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #00ffb3;
-}
-
-/* Contacto */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 500px;
-}
-
-input, textarea {
-  padding: 0.8rem;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  background: #1a1a1a;
+  margin-bottom: 2rem;
+  font-weight: 700;
   color: #fff;
 }
 
-textarea {
-  resize: none;
-  min-height: 120px;
+.text-secondary {
+  color: var(--text-light) !important;
 }
 
-button {
-  background: #00ffb3;
-  padding: 0.8rem;
+/* ================= GLASS CARDS ================= */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 255, 179, 0.2);
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 90vh;
+}
+
+.hero img {
+  border: 4px solid var(--em);
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 255, 179, 0.3);
+}
+
+/* ================= PROYECTOS ================= */
+.card img {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+/* ================= HABILIDADES ================= */
+.glass i {
+  color: var(--em);
+}
+
+/* ================= FAQ ================= */
+.accordion-button {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(0, 255, 179, 0.1);
+  color: var(--em);
+}
+
+.accordion-body {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* ================= CONTACTO ================= */
+form input, form textarea {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+form input:focus, form textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 6px var(--em);
+  border: 1px solid var(--em-dark) !important;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #111 !important;
+  color: #888;
+}
+
+/* ================= SCROLL & ANIMACIONES ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Botón scroll-up */
+#btnTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--em);
   border: none;
-  border-radius: 5px;
-  font-weight: 600;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
 }
 
-button:hover {
-  background: #00d194;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #111;
-  color: #888;
-  margin-top: 2rem;
+#btnTop.show {
+  opacity: 1;
+  visibility: visible;
 }
