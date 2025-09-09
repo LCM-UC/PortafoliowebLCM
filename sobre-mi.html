@@ -40,23 +40,52 @@
   <section class="section-pad">
     <div class="container">
       <div class="row g-4 align-items-center">
+        <!-- Columna texto + tarjetas -->
         <div class="col-lg-6">
           <div class="glass p-4 h-100 reveal">
             <h2 class="mb-3">Sobre mí</h2>
-            <p class="text-secondary mb-3">
+            <p class="text-secondary mb-4">
               Soy <strong>Leonardo</strong>, estudiante universitario y desarrollador de software con sólida formación en ingeniería de sistemas e informática.  
               Tengo experiencia en desarrollo web, aplicaciones móviles y software para empresas.  
-              Me gusta aprender y aplicar tecnología para resolver problemas.
+              Me gusta aprender y aplicar tecnología para resolver problemas de manera innovadora.
             </p>
-            <ul class="list-unstyled text-secondary mb-0">
-              <li><i class="bi bi-check2-circle text-em me-2"></i> Buenas prácticas y semántica</li>
-              <li><i class="bi bi-check2-circle text-em me-2"></i> UI limpia + micro-interacciones</li>
-              <li><i class="bi bi-check2-circle text-em me-2"></i> Comunicación clara</li>
-            </ul>
+
+            <!-- Tarjetas con iconos -->
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="card glass h-100 text-center p-3 border-0">
+                  <i class="bi bi-code-slash fs-2 text-em"></i>
+                  <h6 class="mt-2">Buenas prácticas</h6>
+                  <p class="text-secondary small mb-0">Código limpio y semántico.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card glass h-100 text-center p-3 border-0">
+                  <i class="bi bi-magic fs-2 text-em"></i>
+                  <h6 class="mt-2">UI moderna</h6>
+                  <p class="text-secondary small mb-0">Diseño claro con micro-interacciones.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card glass h-100 text-center p-3 border-0">
+                  <i class="bi bi-people fs-2 text-em"></i>
+                  <h6 class="mt-2">Trabajo en equipo</h6>
+                  <p class="text-secondary small mb-0">Comunicación clara y colaboración.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card glass h-100 text-center p-3 border-0">
+                  <i class="bi bi-lightbulb fs-2 text-em"></i>
+                  <h6 class="mt-2">Creatividad</h6>
+                  <p class="text-secondary small mb-0">Resolución innovadora de problemas.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Columna carrusel -->
         <div class="col-lg-6">
-          <!-- Carousel -->
           <div id="aboutCarousel" class="carousel slide glass reveal" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active p-4">
@@ -71,18 +100,19 @@
               </div>
               <div class="carousel-item p-4">
                 <h5 class="text-em">Reciclhetics App</h5>
-                <p class="text-secondary">Aplicación móvil ligera para gestionar el uso de contenedores de basura y de esa manera contribuir al medio ambiente.</p>
+                <p class="text-secondary">App móvil para gestionar el reciclaje y contribuir al medio ambiente.</p>
                 <img src="img/Reciclethics.png" class="d-block w-100 rounded-3 mt-3" alt="App móvil-Figma">
-            </div>
-            <div class="carousel-item p-4">
+              </div>
+              <div class="carousel-item p-4">
                 <h5 class="text-em">InfoSystem App</h5>
-                <p class="text-secondary">Aplicación móvil ligera creada para brindar información conscisa sobre el la teoría de sistemas.</p>
+                <p class="text-secondary">Aplicación ligera para brindar información sobre teoría de sistemas.</p>
                 <img src="img/InfoSystem.jpg" class="d-block w-100 rounded-3 mt-3" alt="App móvil">
-            </div>
-            <div class="carousel-item p-4">
+              </div>
+              <div class="carousel-item p-4">
                 <h5 class="text-em">Tracker de tareas</h5>
-                <p class="text-secondary">Página web para gestionar tareas y recordatorios de manera eficiente.</p>
+                <p class="text-secondary">Página web para gestionar tareas y recordatorios.</p>
                 <img src="img/Tracker de Tareas.png" class="d-block w-100 rounded-3 mt-3" alt="Tracker de tareas">
+              </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
